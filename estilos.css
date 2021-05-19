@@ -1,0 +1,269 @@
+:root{
+    /*custom properties*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --amarillo: #ffc107;
+    --azul: #0097a0;
+    --gris: #757575;
+    --rosa: #ea899ba3;
+ /*se usa asi--->   color: var(--amarillo)*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; 
+}
+
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, #0f1011 0%, var(--blanco) 100%);
+    
+}
+
+/*--------------------------TITULO(HEADER)-------------------------*/
+h1{
+    font-size: 38px;
+    /* 1rem vale 10px*/
+}
+h2{
+    font-size: 28px;
+}
+h3{
+    font-size: 18px;
+    color: var(--azul);
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+
+.titulo span{
+    /*tamaño de la palabra freelancer*/
+    font-size: 20px;
+    color: blue;
+}
+/*----------------MENU DE NAVEGACION---------------*/
+.contenedor{
+    width: 70%;
+    margin: 20px auto 0px;
+    text-align: center;
+    
+}
+/*-------------para el boton CONTACTAR----------*/
+.boton{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding:10px 30px ;
+    font-size: 20px;
+    text-decoration: none;
+    /*lo hace mayuscula*/
+    text-transform: uppercase;
+    /*lo hace negrita*/
+    font-weight: bold;
+    /*bordes del cuadro*/
+    border-radius: 5px;
+    width: max-content  ;
+    text-align: center;
+    border: none;
+}
+
+@media screen and(min-width: 768px){
+  .boton{
+      width: auto;
+  }
+}
+
+.boton:hover{
+    cursor:pointer;
+}
+
+
+.nave-bg{
+    background-color: var(--azul);
+}
+.nave-principal{
+    display: flex;
+    /*separa las palabras de manera horizontal*/
+    flex-direction: row;
+    width: 100%;
+
+}
+@media screen and(max-width: 768px){
+    .nave-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  
+}
+.nave-principal a{
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: var(--blanco);
+    padding: 10px ;
+    /* borra la linea de la palabra*/
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+/*cuando el cursor pasa cambia de color*/
+.nave-principal a:hover{
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+}
+@media screen and (max-width: 480px){
+    body{
+        background: rgba(85, 255, 0, 0.151);
+    }
+    .nave-principal{
+        display: flex;
+        flex-direction: column;
+        /*para alinear cuando esta a lo vertical*/    
+        align-items: center;
+    }   
+}
+
+/*---------------para las seccion donde esta la imagen principal------------------------------*/
+
+.seccion1{
+    background-color: rgba(2, 0, 0, 0.555);
+    background-image: url(./imagenes/fondo5.jpg);
+    /*para mezclar la imagn con el color*/
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    
+
+}
+
+.contenido-seccion1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-_______----para los textos dentro de l imagen principal ---------------*/
+.contenido-seccion1 h2, 
+.contenido-seccion1 p{
+    color: #ffffff;
+}
+.contenido-seccion1, .ubicacion{
+    display: flex;
+    
+}
+.ubicacion{
+    display: flex;
+    /*align-items: flex-end;     abajo*/
+    align-items: center;/*en el centro*/
+}
+.sombra{
+    
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.74);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.74);
+    box-shadow:  0px 5px 15px 0px rgba(112,112,112,0.74); 
+    background-color: var(--blanco);
+    padding: 10px;
+    border-radius: 20px;
+}
+.servicios{
+    display:flex;
+    column-gap: 20px;
+}
+
+@media screen and (max-width: 550px){
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        /*para alinear cuando esta a lo vertical*/    
+        align-items: center;
+    }   
+}
+.image-services{
+    background-color: var(--rosa);
+    border-radius: 50px;
+}
+.servicios p{
+    line-height: 1.5;
+}
+
+/*----------------seccion contacto*------formulario---------------------*/
+
+
+.form{
+    background-color: var(--rosa);
+    /*funcion con 2 valores(se toma el minimo de las 2 opciones)*/
+    width: min(600px, 100% );
+    /*centra horizontal*/
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form fieldset{
+    border: none;
+}
+
+.form legend{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--blanco)
+}
+/*para los recuadros del formulario*/
+
+
+
+.campo{
+    margin-bottom: 10px;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+
+.w100{
+    width:100%; 
+}
+@media screen and(max-width:700px ){
+  .w100{
+      width: auto;
+  }
+}
+.alinear{
+    justify-content: flex-end;
+}
+.flex{
+    display: flex;
+}

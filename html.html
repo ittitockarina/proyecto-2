@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos2.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Diseño</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Señor de la torre <span>Freelancer</span></h1>
+    </header>
+
+    <div class="nave-bg">
+        <nav class="nave-principal contenedor">
+            <a href="">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="">Clientes</a>
+            <a href="">Contacto</a>
+        </nav>
+    </div>
+    
+    <!--<img src="./imagenes/fondo1.jpg" alt="">-->
+    <section class="seccion1">
+        <div class="contenido-seccion1">
+            <h2>diseño y desarrollo web <span>Freelancer</span></h2>
+            <div class="ubicacion">
+                <img src="./imagenes/iconoLocation3.png" alt="">
+                <p>
+                Arequipa-Peru
+                </p>
+            </div>
+            <a class="boton" href="#">Contactar</a>
+        </div>
+    </section>
+
+    <main class="contenedor sombra">
+        <h2>Mis Servicios</h2>
+        <div class="servicios">
+            <section class="web-design">
+                <h3>Diseño Web</h3>
+                <img class="image-services" src="./imagenes/icono1-paint-palette-96.png" alt="">
+                <p>Sed u Suspendisse gravida finibus lacus eget suscipit. Sed mauris leo</p>    
+            </section>
+            <section>
+                <h3>Aplicaciones Web</h3>
+                <img class="image-services" src="./imagenes/icono2-android-os-96.png" alt="">
+                <p>Sed u Suspendisse gravida finibus lacus eget suscipit. Sed mauris leo</p>    
+            </section>
+            <section>
+                <h3>E-Comerce</h3>
+                <img class="image-services" src="./imagenes/icono3-google-mobile-96.png" alt="">
+                <p>Sed u Suspendisse gravida finibus lacus eget suscipit. Sed mauris leo</p>
+            </section>
+        </div>
+
+   
+        <section>
+            <h2>Contacto</h2>
+            <!--el formulario-->
+            <form class="form">
+                <!--tienes que agregar lo que es la leyenda-->
+                <fieldset>
+                    <legend>
+                        Contactenos llenando todos los campos
+                    </legend>
+
+                    <div class="contenedor-campos">
+
+                        <div class="campo">
+                            <label>Nombre</label>
+                                <!--lo que se va escribir dentro y si no escribes aparece el mensaje del placeholder-->
+                            <input class="input-text"  type="text" placeholder="Tu Nombre">
+                        </div>
+                        <div class="campo">
+                            <label for="">Telefono</label>
+                            <input class="input-text" type="tell" placeholder="Tu Telefono">
+                        </div>
+                        <div class="campo">
+                            <label for="">Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu email">
+                        </div>
+                        <div class="campo">
+                            <label for="">Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="alinear flex">
+                        <!-- <input class="input-text" type="submit" value="Enviar">-->
+                        <button class="boton w-100" type="submit">Enviar</button>
+                    </div>
+                   
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Todos los derechos reservados. ITC</p>
+    </footer>
+    
+</body>
+</html>
